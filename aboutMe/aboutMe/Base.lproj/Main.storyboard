@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="aboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7q-a6-PxW">
+                                <rect key="frame" x="142" y="318" width="91" height="30"/>
+                                <state key="normal" title="Introduce Me"/>
+                                <connections>
+                                    <action selector="introduceMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Koa-ct-jwV"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kZG-rl-9fQ">
+                                <rect key="frame" x="67" y="356" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4A-2Q-CzC">
+                                <rect key="frame" x="156" y="492" width="62" height="30"/>
+                                <state key="normal" title="Goodbye"/>
+                                <connections>
+                                    <action selector="goodbye:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rsL-u9-nxQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t4A-2Q-CzC" firstAttribute="centerX" secondItem="kZG-rl-9fQ" secondAttribute="centerX" id="HzR-Kl-CJ0"/>
+                            <constraint firstItem="kZG-rl-9fQ" firstAttribute="centerX" secondItem="Q7q-a6-PxW" secondAttribute="centerX" id="KGG-uH-nmI"/>
+                            <constraint firstItem="Q7q-a6-PxW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ocz-D5-v1b"/>
+                            <constraint firstItem="kZG-rl-9fQ" firstAttribute="top" secondItem="Q7q-a6-PxW" secondAttribute="bottom" constant="8" symbolic="YES" id="Xtu-4V-Sg4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kZG-rl-9fQ" secondAttribute="bottom" constant="183" id="dQI-Ph-MP9"/>
+                            <constraint firstItem="kZG-rl-9fQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="eGW-UC-8q5"/>
+                            <constraint firstItem="t4A-2Q-CzC" firstAttribute="top" secondItem="kZG-rl-9fQ" secondAttribute="bottom" constant="8" symbolic="YES" id="iXO-Z9-5Np"/>
+                            <constraint firstItem="Q7q-a6-PxW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wDa-Td-2BG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="introductionText" destination="kZG-rl-9fQ" id="bAn-Qu-t1R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
