@@ -19,8 +19,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7q-a6-PxW">
-                                <rect key="frame" x="142" y="318" width="91" height="30"/>
-                                <state key="normal" title="Introduce Me"/>
+                                <rect key="frame" x="170" y="318" width="35" height="30"/>
+                                <state key="normal" title="Hello"/>
                                 <connections>
                                     <action selector="introduceMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Koa-ct-jwV"/>
                                 </connections>

@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         var faveFood = "chocolate"
         let firstCareer = "textbook editor"
         let newCareer = "software test engineer"
+        view.backgroundColor = .white
+        introductionText.backgroundColor = .white
         
         introductionText.text = "My name is \(name) and I am from \(hometown). My favorite color is \(faveColor). I used to be a \(firstCareer), but now I work as a \(newCareer)."
     }
